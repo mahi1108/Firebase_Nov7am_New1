@@ -78,7 +78,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 tx.commit()
             }
             "MLKit" -> {
-
+                var fManager = supportFragmentManager
+                var tx = fManager!!.beginTransaction()
+                tx.replace(R.id.frame1,FbMLKit( ))
+                tx.commit()
             }
             "Admob" -> {
                 var fManager = supportFragmentManager
