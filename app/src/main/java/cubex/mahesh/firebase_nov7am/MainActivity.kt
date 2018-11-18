@@ -96,8 +96,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             }
             "Cloud Messaging" -> {
-
+                var fManager = supportFragmentManager
+                var tx = fManager!!.beginTransaction()
+                tx.replace(R.id.frame1,FbFcm( ))
+                tx.commit()
             }
+            "Users" -> {
+                var fManager = supportFragmentManager
+                var tx = fManager!!.beginTransaction()
+                tx.replace(R.id.frame1,FbRegUsers( ))
+                tx.commit()
+            }
+
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)

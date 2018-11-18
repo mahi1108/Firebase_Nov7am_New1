@@ -11,7 +11,6 @@
     <item android:title="MLKit"/>
     <item android:title="Analytics"/>
     <item android:title="Crashlytics"/>
-
-
+    <item android:title="Users"/>
 
 </menu>
